@@ -27,6 +27,8 @@ enum R {
     
     enum Images {
         
+        static var zaglushka = UIImage(named: "заглушка")
+        
         enum TabBar {
             static func image(for tab: Tabs) -> UIImage? {
                 switch tab {
@@ -39,10 +41,9 @@ enum R {
         }
         
         enum Buttons {
-            static var plusIcon = UIImage(named: "plusIcon")
-            static var saveIcon = UIImage(named: "diskette")
             static var notFavorite = UIImage(named: "notFavorite")
             static var isFavorite = UIImage(named: "isFavorite")
+            static var settings = UIImage(named: "setting")
         }
     }
     
@@ -50,26 +51,22 @@ enum R {
     
     enum Strings {
         
-        enum Titles {
-            
-            static var creatingNote = "Создание заметки"
-        }
-        
         enum Buttons {
             static var back = "Назад"
-            static var notes = "Заметки"
+            static var news = "Новости"
             static var save = "Сохранить"
-            static var add = "Добавить"
+            static var clean = "Очистить избранное"
         }
         
         enum Labels {
-            static var myNotes = "Мои записки"
-            static var noNotes = "Нет записок"
+            static var newsPage = "Yellow press"
+            static var savedNews = "Saved news"
+            static var noNews = "No saved news yet"
         }
         
         
         enum Entity {
-            static var newsEntity = "newsEntity"
+            static var newsEntity = "NewsEntity"
         }
         
         enum TabBar {
@@ -89,13 +86,22 @@ enum R {
     
     enum Sizes {
         
-        static var smallGap : CGFloat = 8
-        static var bigGap : CGFloat = 16
+        static var smallOffset : CGFloat = 8
+        static var bigOffset : CGFloat = 16
+        static var nullOffset : CGFloat = 0
         
         static var smallRadius : CGFloat = 8
         static var bigRadius : CGFloat = 16
         
-    }
+        static var icon : CGFloat = 30
+        
+        enum Font {
+            static var small : CGFloat = 12
+            static var medium : CGFloat = 14
+            static var subtitle : CGFloat = 16
+            static var title : CGFloat = 18
 
-    
+        }
+        
+    }
 }
